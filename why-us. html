@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Why Choose Us | Twister Records Imvepi</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" href="images/twister-logo.jpg">
+</head>
+<body class="is-preload">
+	<div id="wrapper">
+		<header id="header"><a href="index.html" class="logo">Twister Records</a></header>
+		<nav id="nav">
+			<ul class="links">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="work.html">Our Work</a></li>
+				<li class="active"><a href="why-us.html">Why Choose Us</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div id="main">
+			<section class="post">
+				<header class="major"><h1>Why Choose Twister Records Imvepi</h1><p>We are located at Imvepi Refugee Settlement, bringing world-class production to the community</p></header>
+				<div class="row">
+					<div class="col-6 col-12-small"><h3>🎯 Creative Expertise</h3><p>Our team of talented producers and directors collaborate to deliver high-quality music productions, music videos, and visual effects. We bring creative ideas to life.</p></div>
+					<div class="col-6 col-12-small"><h3>🎛️ State-of-the-Art Equipment</h3><p>We use the latest technology and equipment to ensure high-quality productions. Your sound deserves professional tools.</p></div>
+					<div class="col-6 col-12-small"><h3>🤝 Personalized Service</h3><p>We work closely with our clients to understand their vision and deliver tailored solutions. Your project gets our full attention.</p></div>
+					<div class="col-6 col-12-small"><h3>📍 Community Based</h3><p>Based in Imvepi at Radio Faith, we understand local artists and brands. No need to travel to Arua or Kampala for quality.</p></div>
+				</div>
+				<hr />
+				<blockquote>Our mission is to empower artists and brands by providing creative and innovative music and video production solutions that help them stand out in their respective industries.</blockquote>
+				<ul class="actions special"><li><a href="contact.html" class="button large">Start Your Project</a></li></ul>
+			</section>
+		</div>
+	</div>
+	<a href="https://wa.me/256780759719" style="position:fixed; bottom:20px; right:20px; background:#25D366; color:white; padding:15px 25px; border-radius:50px; text-decoration:none; font-weight:bold; box-shadow:0 4px 8px rgba(0,0,0,0.3); z-index:999;">💬 WhatsApp Us</a>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
