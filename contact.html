@@ -5,14 +5,28 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#menu { background: #242943 !important; }
+			#menu .links a { color: #ffffff !important; }
+			.whatsapp-btn {
+				background: #25D366 !important;
+				color: #fff !important;
+				font-weight: 700 !important;
+				border: none !important;
+				box-shadow: 0 4px 12px rgba(37,211,102,0.4);
+				font-size: 1.1em !important;
+			}
+			.whatsapp-btn:hover { background: #1ebe5d !important; }
+		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	<body class="is-preload">
+	<body>
 		<div id="wrapper">
 			<header id="header">
 				<a href="index.html" class="logo"><strong>TWISTER RECORDS</strong> <span>Imvepi</span></a>
 				<nav><a href="#menu">Menu</a></nav>
 			</header>
+
 			<nav id="menu">
 				<ul class="links">
 					<li><a href="index.html">Home</a></li>
@@ -22,67 +36,70 @@
 					<li><a href="contact.html">Contact</a></li>
 				</ul>
 			</nav>
+
 			<div id="main" class="alt">
 				<section id="one">
 					<div class="inner">
 						<header class="major">
 							<h1>Contact Us</h1>
 						</header>
+						<p>Ready to book? Have a question? Hit us up. Fastest reply is on WhatsApp.</p>
+						
+						<ul class="actions" style="margin: 2em 0;">
+							<li><a href="https://wa.me/256780759719" target="_blank" class="button next whatsapp-btn">Message Us on WhatsApp Now</a></li>
+						</ul>
+
 						<div class="row">
 							<div class="col-6 col-12-small">
-								<h3>Book a Session</h3>
-								<p>Ready to record? Send us a message and we'll get back to you within 24 hours.</p>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="phone">WhatsApp Number</label>
-											<input type="text" name="phone" id="phone" />
-										</div>
-										<div class="field">
-											<label for="message">Tell us about your project</label>
-											<textarea name="message" id="message" rows="6"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-									</ul>
-								</form>
+								<h3>Location</h3>
+								<p>Imvepi Refugee Settlement, Terego<br />
+								Open: Mon-Sat, 9AM - 9PM</p>
 							</div>
 							<div class="col-6 col-12-small">
-								<h3>Visit Our Studio</h3>
-								<div class="box">
-									<h4>📍 Location</h4>
-									<p>Imvepi Refugee Settlement<br />
-									Terego District, Uganda</p>
-									
-									<h4>📞 WhatsApp</h4>
-									<p><a href="https://wa.me/256780759719">+256 780 759719</a></p>
-									
-									<h4>📧 Email</h4>
-									<p>twisterrecordsstudio@gmail.com</p>
-									
-									<h4>🕐 Studio Hours</h4>
-									<p>Mon - Sat: 9:00 AM - 7:00 PM<br />
-									Sunday: By appointment</p>
-								</div>
+								<h3>Email</h3>
+								<p><a href="mailto:twisterrecordsstudio@gmail.com">twisterrecordsstudio@gmail.com</a></p>
 							</div>
 						</div>
+
+						<h3>Send a Message</h3>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Name</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Message</label>
+									<textarea name="message" id="message" rows="6"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send Message" class="primary" /></li>
+								<li><input type="reset" value="Clear" /></li>
+							</ul>
+						</form>
 					</div>
 				</section>
 			</div>
+
 			<footer id="footer">
 				<div class="inner">
-					<ul class="copyright"><li>&copy; Twister Records Imvepi</li></ul>
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Twister Records Imvepi 2026</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul>
 				</div>
 			</footer>
 		</div>
-		<a href="https://wa.me/256780759719" class="whatsapp-float" target="_blank">
-			<i class="fab fa-whatsapp"></i> WhatsApp Us
-		</a>
+
 		<script src="assets/js/jquery.min.js"></script>
 		<script src="assets/js/jquery.scrolly.min.js"></script>
 		<script src="assets/js/jquery.scrollex.min.js"></script>
