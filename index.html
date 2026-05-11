@@ -6,12 +6,46 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-  #menu { background: #242943 !important; }
-  #menu .links a { color: #ffffff !important; }
+			/* Fix: Wake up the faded background text */
+			#banner .major h1 { 
+				color: #ffffff !important; 
+				opacity: 1 !important; 
+				text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+			}
+			#banner .content p { 
+				color: #ffffff !important; 
+				opacity: 0.9 !important; 
+			}
+			#banner:after { 
+				opacity: 0.25 !important; 
+			}
+
+			/* Fix: Menu panel styling */
+			#menu { 
+				background: #242943 !important; 
+				box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.2);
+			}
+			#menu .links a { 
+				color: #ffffff !important; 
+				opacity: 1 !important;
+			}
+
+			/* Bold WhatsApp Button */
+			.whatsapp-btn {
+				background: #25D366 !important;
+				color: #fff !important;
+				font-weight: 700 !important;
+				border: none !important;
+				box-shadow: 0 4px 12px rgba(37,211,102,0.4);
+			}
+			.whatsapp-btn:hover { 
+				background: #1ebe5d !important; 
+				color: #fff !important;
+			}
 		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
-	   <body>
+	<body>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -42,10 +76,11 @@
 								<h1>TWISTER RECORDS STUDIO</h1>
 							</header>
 							<div class="content">
-								<p>Professional music production, recording, mixing & mastering<br />
-								in Imvepi Refugee Settlement, Uganda</p>
+								<p>Professional Recording • Mixing • Mastering • Beat Making<br />
+								Based in Imvepi, Uganda</p>
 								<ul class="actions">
-									<li><a href="contact.html" class="button next scrolly">Book a Session</a></li>
+									<li><a href="https://wa.me/256780759719" target="_blank" class="button next whatsapp-btn">Chat on WhatsApp</a></li>
+									<li><a href="#one" class="button next scrolly">Get Started</a></li>
 								</ul>
 							</div>
 						</div>
@@ -58,7 +93,7 @@
 							<section id="one" class="tiles">
 								<article>
 									<span class="image">
-										<img src="images/studio1.jpg" alt="Recording Studio" />
+										<img src="images/studio1.jpg" alt="" />
 									</span>
 									<header class="major">
 										<h3><a href="services.html" class="link">Our Services</a></h3>
@@ -67,50 +102,8 @@
 								</article>
 								<article>
 									<span class="image">
-										<img src="images/studio2.jpg" alt="Music Production" />
-									</span>
-									<header class="major">
-										<h3><a href="work.html" class="link">Our Work</a></h3>
-										<p>Listen to projects we've produced</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/twister-logo.jpg" alt="Twister Records" />
-									</span>
-									<header class="major">
-										<h3><a href="why-us.html" class="link">Why Choose Us</a></h3>
-										<p>Professional quality at affordable rates</p>
-									</header>
-								</article>
-								<article>
-									<span class="image">
-										<img src="images/studio1.jpg" alt="Contact Us" />
-									</span>
-									<header class="major">
-										<h3><a href="contact.html" class="link">Contact</a></h3>
-										<p>Get in touch to start your project</p>
-									</header>
-								</article>
-							</section>
-
-						<!-- Two -->
-							<section id="two">
-								<div class="inner">
-									<header class="major">
-										<h2>Welcome to Twister Records</h2>
-									</header>
-									<p>We are a full-service music production studio based in Imvepi, Uganda. From recording vocals to final mastering, we help artists bring their musical vision to life with professional equipment and experienced engineers. Whether you're a solo artist, band, or choir, we're here to make you sound your best.</p>
-									<ul class="actions">
-										<li><a href="services.html" class="button next">View Services</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
+										<img src="images/studio2.jpg" alt="" />
+									</					<footer id="footer">
 						<div class="inner">
 							<ul class="icons">
 								<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
