@@ -17,40 +17,51 @@
 			}
 			#banner:after { opacity: 0.25 !important; }
 			
-			/* Horizontal Menu - BOLD */
 			#header {
-				display: flex !important;
-				justify-content: space-between !important;
-				align-items: center !important;
+				background: transparent !important;
+				position: absolute !important;
+				top: 0 !important;
+				left: 0 !important;
+				width: 100% !important;
+				z-index: 10000 !important;
+				padding: 2em 0 0 0 !important;
 			}
+			#header .inner {
+				display: flex !important;
+				flex-direction: column !important;
+				align-items: center !important;
+				max-width: 100% !important;
+				padding: 0 2em !important;
+			}
+			#header .logo {
+				margin-bottom: 1em !important;
+				font-size: 1.25em !important;
+			}
+			#nav { width: 100% !important; }
 			#nav ul {
 				display: flex !important;
+				justify-content: center !important;
 				list-style: none !important;
 				margin: 0 !important;
 				padding: 0 !important;
-				gap: 1.5em !important;
+				gap: 2em !important;
 			}
 			#nav ul li a {
 				color: #ffffff !important;
 				font-weight: 700 !important;
 				text-transform: uppercase;
-				font-size: 0.8em;
+				font-size: 0.9em;
 				letter-spacing: 0.25em;
 				border-bottom: none !important;
+				opacity: 0.9 !important;
 			}
-			#nav ul li a:hover { color: #9bf1ff !important; }
+			#nav ul li a:hover { color: #9bf1ff !important; opacity: 1 !important; }
 
 			@media screen and (max-width: 736px) {
-				#nav ul {
-					gap: 0.8em !important;
-					flex-wrap: wrap !important;
-					justify-content: center !important;
-				}
-				#header {
-					flex-direction: column !important;
-					padding: 1em 0 !important;
-				}
-				#header .logo { margin-bottom: 0.5em !important; }
+				#header { padding: 1em 0 0 0 !important; }
+				#header .logo { font-size: 1em !important; margin-bottom: 0.8em !important; }
+				#nav ul { gap: 1em !important; flex-wrap: wrap !important; }
+				#nav ul li a { font-size: 0.75em !important; letter-spacing: 0.15em !important; }
 			}
 
 			.whatsapp-btn {
@@ -68,16 +79,18 @@
 	<body>
 		<div id="wrapper">
 			<header id="header" class="alt">
-				<a href="index.html" class="logo"><strong>TWISTER RECORDS</strong> <span>Imvepi</span></a>
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">HOME</a></li>
-						<li><a href="services.html">SERVICES</a></li>
-						<li><a href="work.html">OUR WORK</a></li>
-						<li><a href="why-us.html">WHY US</a></li>
-						<li><a href="contact.html">CONTACT</a></li>
-					</ul>
-				</nav>
+				<div class="inner">
+					<a href="index.html" class="logo"><strong>TWISTER RECORDS</strong> <span>Imvepi</span></a>
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html">HOME</a></li>
+							<li><a href="services.html">SERVICES</a></li>
+							<li><a href="work.html">OUR WORK</a></li>
+							<li><a href="why-us.html">WHY US</a></li>
+							<li><a href="contact.html">CONTACT</a></li>
+						</ul>
+					</nav>
+				</div>
 			</header>
 
 			<section id="banner" class="major">
@@ -111,6 +124,60 @@
 							<h3><a href="work.html" class="link">Our Work</a></h3>
 							<p>Over 200+ songs mixed and mastered for artists across West Nile. Listen to our sound.</p>
 						</header>
+					</article>
+					<article>
+						<span class="image"><img src="images/mixing1.jpg" alt="Why Us" /></span>
+						<header class="major">
+							<h3><a href="why-us.html" class="link">Why Choose Us</a></h3>
+							<p>Pro gear, fast delivery, fair pricing. We understand the refugee artist journey.</p>
+						</header>
+					</article>
+					<article>
+						<span class="image"><img src="images/artist1.jpg" alt="Contact" /></span>
+						<header class="major">
+							<h3><a href="contact.html" class="link">Book a Session</a></h3>
+							<p>Open Mon-Sat, 9AM-9PM. Walk-ins welcome. WhatsApp for fastest booking.</p>
+						</header>
+					</article>
+				</section>
+
+				<section id="two">
+					<div class="inner">
+						<header class="major">
+							<h2>Your Sound, Amplified</h2>
+						</header>
+						<p>Twister Records Imvepi was built to give refugee and host community artists access to world-class production. No more traveling to Kampala. Get radio-ready quality right here. We speak English, Lugbara, Arabic, and Kiswahili.</p>
+						<ul class="actions">
+							<li><a href="https://wa.me/256741366642" target="_blank" class="button next whatsapp-btn">Book on WhatsApp</a></li>
+							<li><a href="https://www.youtube.com/@twister2210?sub_confirmation=1" target="_blank" class="button youtube-sub">Subscribe YouTube</a></li>
+						</ul>
+					</div>
+				</section>
+			</div>
+
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/profile.php?id=61577600830232" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.youtube.com/@twister2210" target="_blank" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+						<li><a href="https://wa.me/256741366642" target="_blank" class="icon brands alt fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Twister Records Studio Imvepi 2026</li><li>Design: Twister Records Imvepi</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+						</html>						</header>
 					</article>
 					<article>
 						<span class="image"><img src="images/mixing1.jpg" alt="Why Us" /></span>
