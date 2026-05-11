@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Twister Records Imvepi | Professional Music Studio Terego</title>
+		<title>Twister Records Imvepi | Professional Music Studio Uganda</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -16,8 +16,43 @@
 				opacity: 0.9 !important; 
 			}
 			#banner:after { opacity: 0.25 !important; }
-			#menu { background: #242943 !important; box-shadow: 0 0 1.5em 0 rgba(0,0,0,0.2); }
-			#menu .links a { color: #ffffff !important; opacity: 1 !important; }
+			
+			/* Horizontal Menu - BOLD */
+			#header {
+				display: flex !important;
+				justify-content: space-between !important;
+				align-items: center !important;
+			}
+			#nav ul {
+				display: flex !important;
+				list-style: none !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				gap: 1.5em !important;
+			}
+			#nav ul li a {
+				color: #ffffff !important;
+				font-weight: 700 !important;
+				text-transform: uppercase;
+				font-size: 0.8em;
+				letter-spacing: 0.25em;
+				border-bottom: none !important;
+			}
+			#nav ul li a:hover { color: #9bf1ff !important; }
+
+			@media screen and (max-width: 736px) {
+				#nav ul {
+					gap: 0.8em !important;
+					flex-wrap: wrap !important;
+					justify-content: center !important;
+				}
+				#header {
+					flex-direction: column !important;
+					padding: 1em 0 !important;
+				}
+				#header .logo { margin-bottom: 0.5em !important; }
+			}
+
 			.whatsapp-btn {
 				background: #25D366 !important;
 				color: #fff !important;
@@ -34,18 +69,16 @@
 		<div id="wrapper">
 			<header id="header" class="alt">
 				<a href="index.html" class="logo"><strong>TWISTER RECORDS</strong> <span>Imvepi</span></a>
-				<nav><a href="#menu">Menu</a></nav>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="services.html">SERVICES</a></li>
+						<li><a href="work.html">OUR WORK</a></li>
+						<li><a href="why-us.html">WHY US</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
 			</header>
-
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="work.html">Our Work</a></li>
-					<li><a href="why-us.html">Why Us</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
 
 			<section id="banner" class="major">
 				<div class="inner">
@@ -111,6 +144,27 @@
 
 			<footer id="footer">
 				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://www.facebook.com/profile.php?id=61577600830232" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.youtube.com/@twister2210" target="_blank" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
+						<li><a href="https://wa.me/256741366642" target="_blank" class="icon brands alt fa-whatsapp"><span class="label">WhatsApp</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Twister Records Studio Imvepi 2026</li><li>Design: Twister Records Imvepi</li>
+					</ul>
+				</div>
+			</footer>
+		</div>
+
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</body>
+																																					   </html>				<div class="inner">
 					<ul class="icons">
 						<li><a href="https://www.facebook.com/profile.php?id=61577600830232" target="_blank" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="https://www.youtube.com/@twister2210" target="_blank" class="icon brands alt fa-youtube"><span class="label">YouTube</span></a></li>
