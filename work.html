@@ -6,8 +6,15 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
-			#menu { background: #242943 !important; }
-			#menu .links a { color: #ffffff !important; }
+			#header { display: flex !important; justify-content: space-between !important; align-items: center !important; }
+			#nav ul { display: flex !important; list-style: none !important; margin: 0 !important; padding: 0 !important; gap: 1.5em !important; }
+			#nav ul li a { color: #ffffff !important; font-weight: 700 !important; text-transform: uppercase; font-size: 0.8em; letter-spacing: 0.25em; border-bottom: none !important; }
+			#nav ul li a:hover { color: #9bf1ff !important; }
+			@media screen and (max-width: 736px) {
+				#nav ul { gap: 0.8em !important; flex-wrap: wrap !important; justify-content: center !important; }
+				#header { flex-direction: column !important; padding: 1em 0 !important; }
+				#header .logo { margin-bottom: 0.5em !important; }
+			}
 			.whatsapp-btn { background: #25D366 !important; color: #fff !important; font-weight: 700 !important; border: none !important; box-shadow: 0 4px 12px rgba(37,211,102,0.4); }
 			.whatsapp-btn:hover { background: #1ebe5d !important; }
 			.video-container { position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 2em; }
@@ -19,18 +26,16 @@
 		<div id="wrapper">
 			<header id="header">
 				<a href="index.html" class="logo"><strong>TWISTER RECORDS</strong> <span>Imvepi</span></a>
-				<nav><a href="#menu">Menu</a></nav>
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">HOME</a></li>
+						<li><a href="services.html">SERVICES</a></li>
+						<li><a href="work.html">OUR WORK</a></li>
+						<li><a href="why-us.html">WHY US</a></li>
+						<li><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</nav>
 			</header>
-
-			<nav id="menu">
-				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="services.html">Services</a></li>
-					<li><a href="work.html">Our Work</a></li>
-					<li><a href="why-us.html">Why Us</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
 
 			<div id="main" class="alt">
 				<section id="one">
@@ -82,7 +87,7 @@
 						<li><a href="https://wa.me/256741366642" target="_blank" class="icon brands alt fa-whatsapp"><span class="label">WhatsApp</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Twister Records Imvepi 2026</li><li>Design: Twister Records Imvepi</li>
+						<li>&copy; Twister Records Studio Imvepi 2026</li><li>Design: Twister Records Imvepi</li>
 					</ul>
 				</div>
 			</footer>
@@ -95,4 +100,4 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 	</body>
-</html>
+							</html>
