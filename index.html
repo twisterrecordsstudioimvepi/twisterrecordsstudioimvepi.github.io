@@ -158,29 +158,32 @@ if('serviceWorker' in navigator){
 		<script src="assets/js/breakpoints.min.js"></script>
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
-		<script>
-let deferredPrompt;
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  
-  // Show custom install button
-  const installBanner = document.createElement('div');
-  installBanner.innerHTML = `
-    <div style="position:fixed;bottom:0;left:0;right:0;background:#242943;color:#fff;padding:15px;text-align:center;z-index:9999;">
-      📱 Install Twister Records app for faster access 
-      <button onclick="installApp()" style="background:#00ffcc;color:#242943;border:none;padding:8px 15px;margin-left:10px;border-radius:4px;font-weight:bold;">Install</button>
-      <span onclick="this.parentElement.remove()" style="margin-left:15px;cursor:pointer;">✕</span>
-    </div>`;
-  document.body.appendChild(installBanner);
-});
-
-function installApp() {
-  deferredPrompt.prompt();
-  deferredPrompt.userChoice.then(() => {
-    deferredPrompt = null;
-  });
-}
-		</script>
+    <script>
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      
+      // Show custom install button
+      const installBanner = document.createElement('div');
+      installBanner.innerHTML = `
+        <div style="position:fixed;bottom:0;left:0;right:0;background:#242943;color:#fff;padding:15px;text-align:center;z-index:9999;font-family:Arial;">
+          📱 Install Twister Records app for faster access 
+          <button onclick="installApp()" style="background:#00ffcc;color:#242943;border:none;padding:8px 15px;margin-left:10px;border-radius:4px;font-weight:bold;cursor:pointer;">Install</button>
+          <span onclick="this.parentElement.remove()" style="margin-left:15px;cursor:pointer;font-size:18px;">✕</span>
+        </div>`;
+      document.body.appendChild(installBanner);
+    });
+    
+    function installApp() {
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted install');
+        }
+        deferredPrompt = null;
+      });
+    }
+	</script>
 	</body>
 </html>
