@@ -1,0 +1,25 @@
+{
+  "name": "Twister Records Studio Imvepi",
+  "short_name": "Twister Records",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#242943",
+  "theme_color": "#242943",
+  "description": "Record, mix, master in Imvepi. Book sessions, download beats, buy presets & drum kits.",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/logo-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/logo-512.png",
+      "sizes": "512x512", 
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["music", "entertainment", "business"]
+}
